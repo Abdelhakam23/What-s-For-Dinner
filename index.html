@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whats's For Dinner</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top px-2 py-3 py-lg-2 navbar-expand-lg bg-white">
+        <div class="container-xl">
+          <a class="navbar-brand" href="#">
+            <div class="d-flex align-items-center gap-2">
+              <div class="logo d-flex align-items-center">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <div>
+                <h1 class="m-0">What's For Dinner</h1>
+                <p class="m-0">Your daily meal inspiration</p>
+              </div>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="d-flex align-items-lg-center flex-column flex-lg-row gap-3 navbar-nav px-2 py-3 py-lg-0 ms-auto mb-2 mb-lg-0"
+            >
+              <li class="nav-item">
+                <button>
+                  <i class="fa-solid fa-bookmark"></i>
+                  <span> saved recipes </span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button>
+                  <i class="fa-solid fa-clock-rotate-left"></i>
+                  <span>recent</span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button>
+                  <i class="fa-solid fa-gear"></i>
+                  <span>settings</span>
+                </button>
+              </li>
+              <li>
+                <button class="d-flex align-items-center gap-2">
+                  <div class="pic">
+                    <img src="images/mahmoud.jpeg" alt="Mahmoud " />
+                  </div>
+                  <span>profile</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="mealSection" class="meal-section p-2">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <div class="meal-img">
+                <img
+                  id="mealImg"
+                  src="images/meal-1.jpg"
+                  class="w-100"
+                  alt="meal-image"
+                />
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i>
+                  <span id="rate">4.6</span>
+                  <span id="reviews">(278 reviews)</span>
+                </div>
+                <div
+                  class="times text-center d-flex justify-content-around align-items-center"
+                >
+                  <div class="prep-time">
+                    <i class="fa-solid fa-clock"></i>
+                    <p class="m-0 cat">Prep Time</p>
+                    <p class="m-0 time"><span id="prepTime">15</span>min</p>
+                  </div>
+
+                  <div class="prep-time">
+                    <i class="fa-solid fa-fire-burner"></i>
+                    <p class="m-0 cat">Cook Time</p>
+                    <p class="m-0 time"><span id="prepTime">20</span>min</p>
+                  </div>
+
+                  <div class="prep-time">
+                    <i class="fa-solid fa-users"></i>
+                    <p class="m-0 cat">Servings</p>
+                    <p class="m-0 time"><span id="prepTime">4</span>people</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 info"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+@media (min-width:992px) {
+    .navbar .navbar-nav {
+  border-top:none;
+}
+
+main .meal-section .meal-img img {
+  height: 100%;
+}
+}
