@@ -82,8 +82,8 @@ ul {
 
 main {
   background-image: linear-gradient(#fef8ed, #fff9eb, #fffbeb);
-  /* height: 100vh; */
-  padding-top: 80px;
+  height: 100vh;
+  padding-top: 100px;
 }
 
 main .meal-section .meal-img {
