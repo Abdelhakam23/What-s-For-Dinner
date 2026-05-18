@@ -228,7 +228,9 @@ main .meal-section .info .tab-content #pills-ingredients{
 }
 main .meal-section .info .tab-content .tab-pane {
     overflow-y: scroll;
-    min-height: 340px;
+    max-height: 320px;
+    scrollbar-width: thin;
+    scrollbar-color: #fe886a4d;
 }
 main .meal-section .info .tab-content .step .num{
     background-color:#EA6731;
