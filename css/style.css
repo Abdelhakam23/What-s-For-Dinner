@@ -61,7 +61,7 @@ ul {
   display: block;
 }
 
-.navbar .navbar-nav button {
+.navbar .navbar-nav button span {
   text-transform: capitalize;
   font-size: 1rem;
   font-weight: 400;
@@ -191,7 +191,7 @@ main .meal-section .info .level #level {
   text-transform: capitalize;
 }
 
-main .meal-section .info .level #countery {
+main .meal-section .info .level #category {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 16px;

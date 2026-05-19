@@ -11,6 +11,12 @@
     border-top: none;
   }
 
+.navbar .navbar-nav button span {
+ display: none;
+}
+
+
+
   main .meal-section .meal-img {
     height: 100%;
     border-top-right-radius: 0;
@@ -28,7 +34,7 @@
 
 @media (min-width:1200px) {
     html{
-        font-size: 115%;
+        font-size: 110%;
     }
     
 }
