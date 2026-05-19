@@ -253,33 +253,37 @@ var meals = [
 
 // console.log(meals[0]);
 
+var title = document.getElementById("title");
+var desc = document.getElementById("desc");
+var mealImg = document.getElementById("mealImg");
+var rate = document.getElementById("rate");
+var prepTime = document.getElementById("prepTime");
+var cookTime = document.getElementById("cookTime");
+var serving = document.getElementById("servings");
+var level = document.getElementById("level");
+var category = document.getElementById("category");
+var ingredients = document.getElementById("ingredient");
+var instructions = document.getElementById("instructions");
+var nutritionContainer = document.getElementById("calorie");
+var tips = document.getElementById("tip");
+
 function displayMeal() {
-  var title = document.getElementById("title");
   title.innerText = meals[idx].name;
-  var desc = document.getElementById("desc");
   desc.innerText = meals[idx].description;
-  var mealImg = document.getElementById("mealImg");
   mealImg.src = meals[idx].image;
 
-  var rate = document.getElementById("rate");
   rate.innerText = meals[idx].rate;
 
-  var prepTime = document.getElementById("prepTime");
   prepTime.innerText = meals[idx].prepTime;
 
-  var cookTime = document.getElementById("cookTime");
   cookTime.innerText = meals[idx].cookTime;
 
-  var serving = document.getElementById("servings");
   serving.innerText = meals[idx].servings;
 
-  var level = document.getElementById("level");
   level.innerText = meals[idx].level;
 
-  var category = document.getElementById("category");
   category.innerText = meals[idx].category;
 
-  var ingredients = document.getElementById("ingredient");
   ingredients.innerHTML = ``;
   for (var i = 0; i < meals[idx].ingredients.length; i++) {
     // console.log(meals[idx].ingredients[i]);
@@ -290,7 +294,6 @@ function displayMeal() {
                       </div>`;
   }
 
-  var instructions = document.getElementById("instructions");
   instructions.innerHTML = ``;
   for (var i = 0; i < meals[idx].instructions.length; i++) {
     instructions.innerHTML += `<div class="instructions d-flex align-items-center gap-2">
@@ -299,7 +302,6 @@ function displayMeal() {
                       </div>`;
   }
   // 1. امسك الحاوية بتاعة الـ nutrition
-  var nutritionContainer = document.getElementById("calorie");
   nutritionContainer.innerHTML = ``;
 
   var nutritionIcons = {
@@ -327,15 +329,14 @@ function displayMeal() {
       </div>`;
   }
 
-  var tips = document.getElementById('tip');
   tips.innerHTML = ``;
-  for (var i = 0; i < meals[idx].tips.length; i++){
-    tips.innerHTML+=` <div class="tip d-flex align-items-center gap-2">
+  for (var i = 0; i < meals[idx].tips.length; i++) {
+    tips.innerHTML += ` <div class="tip d-flex align-items-center gap-2">
                         <div class="done">
                           <i class="fa-solid fa-circle-check"></i>
                         </div>
                         <p class="m-0" >${meals[idx].tips[i]}</p>
-                      </div>`
+                      </div>`;
   }
 }
 

@@ -84,8 +84,10 @@ ul {
 
 main {
   background-image: linear-gradient(#fef8ed, #fff9eb, #fffbeb);
-  height: 100vh;
-  padding-block: 100px;
+  min-height: 100vh;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 40px;
   padding-inline: 20px;
 }
 
@@ -94,11 +96,12 @@ main .meal-section .meal-img {
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
   overflow: hidden;
-  height: 400px;
+  height: 450px;
 }
 
 main .meal-section .meal-img img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
