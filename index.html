@@ -72,9 +72,9 @@
       </nav>
     </header>
     <main>
-      <section id="mealSection" class="meal-section p-3">
-        <div class="container-xl">
-          <div class="row">
+      <div class="container-xl">
+        <section id="mealSection" class="meal-section overflow-hidden">
+          <div class="row mx-0 my-0">
             <div class="col-12 col-lg-5 g-0">
               <div class="meal-img">
                 <img
@@ -159,7 +159,7 @@
                       type="button"
                       role="tab"
                       aria-controls="pills-instructions"
-                      aria-selected="true"
+                      aria-selected="false"
                     >
                       <i class="fa-solid fa-book-open"></i>
                       instructions
@@ -174,7 +174,7 @@
                       type="button"
                       role="tab"
                       aria-controls="pills-nutrition"
-                      aria-selected="true"
+                      aria-selected="false"
                     >
                       <i class="fa-solid fa-chart-pie"></i>
                       Nutrition
@@ -189,14 +189,14 @@
                       type="button"
                       role="tab"
                       aria-controls="pills-tips"
-                      aria-selected="true"
+                      aria-selected="false"
                     >
                       <i class="fa-solid fa-lightbulb"></i>
                       chef's tips
                     </button>
                   </li>
                 </ul>
-                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-content border-bottom" id="pills-tabContent">
                   <div
                     class="tab-pane fade show active"
                     id="pills-ingredients"
@@ -241,12 +241,167 @@
                       <p class="m-0">500g ground beef</p>
                     </div>
                   </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-instructions"
+                    role="tabpanel"
+                    aria-labelledby="pills-instructions-tab"
+                    tabindex="0"
+                  >
+                    <div class="d-flex flex-column gap-4">
+                      <div class="instructions d-flex align-items-center gap-2">
+                        <span class="d-flex align-items-center"> 1 </span>
+                        <p class="m-0" id="instructions">
+                          Heat a large skillet over medium-high heat. Cook
+                          ground beef until browned.
+                        </p>
+                      </div>
+                      <div class="instructions d-flex align-items-center gap-2">
+                        <span class="d-flex align-items-center"> 1 </span>
+                        <p class="m-0" id="instructions">
+                          Heat a large skillet over medium-high heat. Cook
+                          ground beef until browned.
+                        </p>
+                      </div>
+                      <div class="instructions d-flex align-items-center gap-2">
+                        <span class="d-flex align-items-center"> 1 </span>
+                        <p class="m-0" id="instructions">
+                          Heat a large skillet over medium-high heat. Cook
+                          ground beef until browned.
+                        </p>
+                      </div>
+                      <div class="instructions d-flex align-items-center gap-2">
+                        <span class="d-flex align-items-center"> 1 </span>
+                        <p class="m-0" id="instructions">
+                          Heat a large skillet over medium-high heat. Cook
+                          ground beef until browned.
+                        </p>
+                      </div>
+                      <div class="instructions d-flex align-items-center gap-2">
+                        <span class="d-flex align-items-center"> 1 </span>
+                        <p class="m-0" id="instructions">
+                          Heat a large skillet over medium-high heat. Cook
+                          ground beef until browned.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-nutrition"
+                    role="tabpanel"
+                    aria-labelledby="pills-nutrition-tab"
+                    tabindex="0"
+                  >
+                    <div class="d-flex flex-column gap-4">
+                      <div
+                        class="calorie d-flex justify-content-between align-items-center"
+                      >
+                        <div class="left d-flex align-items-center gap-2">
+                          <div class="icon d-flex align-items-center">
+                            <i class="fa-solid fa-fire"></i>
+                          </div>
+                          <span class="title">Calories</span>
+                        </div>
+                        <span class="right"> kcal </span>
+                      </div>
+                      <div
+                        class="calorie d-flex justify-content-between align-items-center"
+                      >
+                        <div class="left d-flex align-items-center gap-2">
+                          <div class="icon d-flex align-items-center">
+                            <i class="fa-solid fa-fire"></i>
+                          </div>
+                          <span class="title">Calories</span>
+                        </div>
+                        <span class="right"> kcal </span>
+                      </div>
+                      <div
+                        class="calorie d-flex justify-content-between align-items-center"
+                      >
+                        <div class="left d-flex align-items-center gap-2">
+                          <div class="icon d-flex align-items-center">
+                            <i class="fa-solid fa-fire"></i>
+                          </div>
+                          <span class="title">Calories</span>
+                        </div>
+                        <span class="right"> kcal </span>
+                      </div>
+                      <div
+                        class="calorie d-flex justify-content-between align-items-center"
+                      >
+                        <div class="left d-flex align-items-center gap-2">
+                          <div class="icon d-flex align-items-center">
+                            <i class="fa-solid fa-fire"></i>
+                          </div>
+                          <span class="title">Calories</span>
+                        </div>
+                        <span class="right"> kcal </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-tips"
+                    role="tabpanel"
+                    aria-labelledby="pills-tips-tab"
+                    tabindex="0"
+                  >
+                    <div class="d-flex flex-column gap-4">
+                      <div class="tip d-flex align-items-center gap-2">
+                        <div class="done">
+                          <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <p class="m-0">
+                          Drain excess fat from beef for healthier tacos
+                        </p>
+                      </div>
+                      <div class="tip d-flex align-items-center gap-2">
+                        <div class="done">
+                          <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <p class="m-0">
+                          Drain excess fat from beef for healthier tacos
+                        </p>
+                      </div>
+                      <div class="tip d-flex align-items-center gap-2">
+                        <div class="done">
+                          <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <p class="m-0">
+                          Drain excess fat from beef for healthier tacos
+                        </p>
+                      </div>
+                      <div class="tip d-flex align-items-center gap-2">
+                        <div class="done">
+                          <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <p class="m-0">
+                          Drain excess fat from beef for healthier tacos
+                        </p>
+                      </div>
+                      <div class="tip d-flex align-items-center gap-2">
+                        <div class="done">
+                          <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <p class="m-0">
+                          Drain excess fat from beef for healthier tacos
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-3 try">
+                  <button id="try-another-btn">
+                    <i class="fa-solid fa-rotate"></i>
+                    Try Another Recipe
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
