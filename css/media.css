@@ -1,9 +1,40 @@
-@media (min-width:992px) {
-    .navbar .navbar-nav {
-  border-top:none;
+
+@media (min-width:768px) {
+    html{
+        font-size: 110%;
+    }
+    
 }
 
-main .meal-section .meal-img img {
-  height: 100%;
+@media (min-width: 992px) {
+  .navbar .navbar-nav {
+    border-top: none;
+  }
+
+.navbar .navbar-nav button span {
+ display: none;
 }
+
+
+
+  main .meal-section .meal-img {
+    height: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+  }
+  main .meal-section .info {
+    /* height: 100%; */
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 12px;
+  }
+  html{
+    font-size: 113%;
+  }
+}
+
+@media (min-width:1200px) {
+    html{
+        font-size: 110%;
+    }
+    
 }

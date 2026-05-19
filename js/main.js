@@ -251,5 +251,100 @@ var meals = [
   },
 ];
 
+// console.log(meals[0]);
 
-console.log(meals[0]);
+function displayMeal() {
+  var title = document.getElementById("title");
+  title.innerText = meals[idx].name;
+  var desc = document.getElementById("desc");
+  desc.innerText = meals[idx].description;
+  var mealImg = document.getElementById("mealImg");
+  mealImg.src = meals[idx].image;
+
+  var rate = document.getElementById("rate");
+  rate.innerText = meals[idx].rate;
+
+  var prepTime = document.getElementById("prepTime");
+  prepTime.innerText = meals[idx].prepTime;
+
+  var cookTime = document.getElementById("cookTime");
+  cookTime.innerText = meals[idx].cookTime;
+
+  var serving = document.getElementById("servings");
+  serving.innerText = meals[idx].servings;
+
+  var level = document.getElementById("level");
+  level.innerText = meals[idx].level;
+
+  var category = document.getElementById("category");
+  category.innerText = meals[idx].category;
+
+  var ingredients = document.getElementById("ingredient");
+  ingredients.innerHTML = ``;
+  for (var i = 0; i < meals[idx].ingredients.length; i++) {
+    // console.log(meals[idx].ingredients[i]);
+
+    ingredients.innerHTML += `<div class="step d-flex align-items-center gap-2">
+                        <div class="num">${i + 1}</div>
+                        <p class="m-0">${meals[idx].ingredients[i]}</p>
+                      </div>`;
+  }
+
+  var instructions = document.getElementById("instructions");
+  instructions.innerHTML = ``;
+  for (var i = 0; i < meals[idx].instructions.length; i++) {
+    instructions.innerHTML += `<div class="instructions d-flex align-items-center gap-2">
+                        <span class="d-flex align-items-center">${i + 1} </span>
+                        <p class="m-0">${meals[idx].instructions[i]}</p>
+                      </div>`;
+  }
+  // 1. امسك الحاوية بتاعة الـ nutrition
+  var nutritionContainer = document.getElementById("calorie");
+  nutritionContainer.innerHTML = ``;
+
+  var nutritionIcons = {
+    calories: "fa-fire",
+    carbohydrates: "fa-wheat-awn",
+    fiber: "fa-seedling",
+    protein: "fa-egg",
+    fat: "fa-bacon",
+    sodium: "fa-bacon",
+  };
+
+  for (var key in meals[idx].nutrition) {
+    var value = meals[idx].nutrition[key];
+    var iconClass = nutritionIcons[key] || "fa-chart-pie";
+
+    nutritionContainer.innerHTML += `
+      <div class="calorie d-flex justify-content-between align-items-center mb-2">
+        <div class="left d-flex align-items-center gap-2">
+          <div class="icon d-flex align-items-center">
+            <i class="fa-solid ${iconClass}"></i>
+          </div>
+          <span class="title text-capitalize">${key}</span>
+        </div>
+        <span class="right"> ${value} ${key === "calories" ? "kcal" : "g"} </span>
+      </div>`;
+  }
+
+  var tips = document.getElementById('tip');
+  tips.innerHTML = ``;
+  for (var i = 0; i < meals[idx].tips.length; i++){
+    tips.innerHTML+=` <div class="tip d-flex align-items-center gap-2">
+                        <div class="done">
+                          <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <p class="m-0" >${meals[idx].tips[i]}</p>
+                      </div>`
+  }
+}
+
+var idx = Math.floor(Math.random() * meals.length);
+
+displayMeal();
+
+function changeIdx() {
+  idx = Math.floor(Math.random() * meals.length);
+  console.log(idx);
+  displayMeal();
+}

@@ -72,20 +72,15 @@
       </nav>
     </header>
     <main>
-      <section id="mealSection" class="meal-section p-3">
-        <div class="container-xl">
-          <div class="row">
+      <div class="container-xl">
+        <section id="mealSection" class="meal-section overflow-hidden">
+          <div class="row mx-0 my-0">
             <div class="col-12 col-lg-5 g-0">
               <div class="meal-img">
-                <img
-                  id="mealImg"
-                  src="images/meal-1.jpg"
-                  class="w-100"
-                  alt="meal-image"
-                />
+                <img id="mealImg" src="" class="w-100" alt="meal-image" />
                 <div class="rate">
                   <i class="fa-solid fa-star"></i>
-                  <span id="rate">4.6</span>
+                  <span id="rate"></span>
                   <span id="reviews">(278 reviews)</span>
                 </div>
                 <div
@@ -94,19 +89,19 @@
                   <div class="prep-time">
                     <i class="fa-solid fa-clock"></i>
                     <p class="m-0 cat">Prep Time</p>
-                    <p class="m-0 time"><span id="prepTime">15</span>min</p>
+                    <p class="m-0 time"><span id="prepTime"></span>min</p>
                   </div>
 
                   <div class="prep-time">
                     <i class="fa-solid fa-fire-burner"></i>
                     <p class="m-0 cat">Cook Time</p>
-                    <p class="m-0 time"><span id="prepTime">20</span>min</p>
+                    <p class="m-0 time"><span id="cookTime"></span>min</p>
                   </div>
 
                   <div class="prep-time">
                     <i class="fa-solid fa-users"></i>
                     <p class="m-0 cat">Servings</p>
-                    <p class="m-0 time"><span id="prepTime">4</span>people</p>
+                    <p class="m-0 time"><span id="servings"></span>people</p>
                   </div>
                 </div>
               </div>
@@ -122,13 +117,11 @@
                   </div>
                 </div>
                 <div class="level mb-2 d-flex gap-2">
-                  <span id="level">easy</span>
-                  <span id="countery">american</span>
+                  <span id="level"></span>
+                  <span id="category"></span>
                 </div>
-                <h2 class="m-0">Beef Tacos</h2>
-                <p class="m-0 mb-3">
-                  Flavorful Mexican tacos with seasoned ground beef
-                </p>
+                <h2 class="m-0" id="title"></h2>
+                <p class="m-0 mb-3" id="desc"></p>
 
                 <ul
                   class="nav flex-nowrap justify-content-between nav-pills mb-3 border-bottom p-2"
@@ -159,7 +152,7 @@
                       type="button"
                       role="tab"
                       aria-controls="pills-instructions"
-                      aria-selected="true"
+                      aria-selected="false"
                     >
                       <i class="fa-solid fa-book-open"></i>
                       instructions
@@ -174,7 +167,7 @@
                       type="button"
                       role="tab"
                       aria-controls="pills-nutrition"
-                      aria-selected="true"
+                      aria-selected="false"
                     >
                       <i class="fa-solid fa-chart-pie"></i>
                       Nutrition
@@ -189,14 +182,14 @@
                       type="button"
                       role="tab"
                       aria-controls="pills-tips"
-                      aria-selected="true"
+                      aria-selected="false"
                     >
                       <i class="fa-solid fa-lightbulb"></i>
                       chef's tips
                     </button>
                   </li>
                 </ul>
-                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-content border-bottom" id="pills-tabContent">
                   <div
                     class="tab-pane fade show active"
                     id="pills-ingredients"
@@ -204,49 +197,53 @@
                     aria-labelledby="pills-ingredients-tab"
                     tabindex="0"
                   >
-                    <div class="step d-flex align-items-center gap-2 p-2">
-                      <div class="num">1</div>
-                      <p class="m-0">500g ground beef</p>
-                    </div>
-                    <div class="step d-flex align-items-center gap-2 p-2">
-                      <div class="num">2</div>
-                      <p class="m-0">500g ground beef</p>
-                    </div>
-                    <div class="step d-flex align-items-center gap-2 p-2">
-                      <div class="num">3</div>
-                      <p class="m-0">500g ground beef</p>
-                    </div>
-                    <div class="step d-flex align-items-center gap-2 p-2">
-                      <div class="num">4</div>
-                      <p class="m-0">500g ground beef</p>
-                    </div>
-                    <div class="step d-flex align-items-center gap-2 p-2">
-                      <div class="num">5</div>
-                      <p class="m-0">500g ground beef</p>
-                    </div>
-                    <div class="step d-flex align-items-center gap-2 p-2">
-                      <div class="num">6</div>
-                      <p class="m-0">500g ground beef</p>
-                    </div>
-                    <div class="step d-flex align-items-center gap-2 p-2">
-                      <div class="num">7</div>
-                      <p class="m-0">500g ground beef</p>
-                    </div>
-                    <div class="step d-flex align-items-center gap-2 p-2">
-                      <div class="num">8</div>
-                      <p class="m-0">500g ground beef</p>
-                    </div>
-                    <div class="step d-flex align-items-center gap-2 p-2">
-                      <div class="num">9</div>
-                      <p class="m-0">500g ground beef</p>
-                    </div>
+                    <div
+                      class="d-flex flex-column gap-4 p-2"
+                      id="ingredient"
+                    ></div>
                   </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-instructions"
+                    role="tabpanel"
+                    aria-labelledby="pills-instructions-tab"
+                    tabindex="0"
+                  >
+                    <div
+                      class="d-flex flex-column gap-4"
+                      id="instructions"
+                    ></div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-nutrition"
+                    role="tabpanel"
+                    aria-labelledby="pills-nutrition-tab"
+                    tabindex="0"
+                  >
+                    <div class="d-flex flex-column gap-4" id="calorie"></div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-tips"
+                    role="tabpanel"
+                    aria-labelledby="pills-tips-tab"
+                    tabindex="0"
+                  >
+                    <div class="d-flex flex-column gap-4 p-3" id="tip"></div>
+                  </div>
+                </div>
+                <div class="py-3 try">
+                  <button id="try-another-btn" onclick="changeIdx()">
+                    <i class="fa-solid fa-rotate"></i>
+                    Try Another Recipe
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>

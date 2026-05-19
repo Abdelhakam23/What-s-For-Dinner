@@ -12,7 +12,7 @@ ul {
 
 .navbar .navbar-toggler {
   border: none;
-  font-size: 24px;
+  font-size: 1.5rem;
   transition: color 300ms;
 }
 
@@ -31,37 +31,39 @@ ul {
 .navbar .navbar-brand .logo {
   background-color: var(--main-color);
   padding: 10px;
-  font-size: 22px;
+  font-size: 1.375rem;
   border-radius: 50%;
   color: white;
   box-shadow: 0px 0px #0000;
 }
 
 .navbar .navbar-brand h1 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 28px;
   color: oklch(0.21 0.034 264.665);
 }
 
 .navbar .navbar-brand p {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 16px;
   color: oklch(0.551 0.027 264.364);
 }
+
 .navbar .navbar-nav {
   border-top: 1px solid #ffedd4;
 }
+
 .navbar .navbar-nav button {
   border: none;
   background-color: transparent;
   display: block;
 }
 
-.navbar .navbar-nav button {
+.navbar .navbar-nav button span {
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
 }
@@ -83,18 +85,21 @@ ul {
 main {
   background-image: linear-gradient(#fef8ed, #fff9eb, #fffbeb);
   height: 100vh;
-  padding-top: 100px;
+  padding-block: 100px;
+  padding-inline: 20px;
 }
 
 main .meal-section .meal-img {
   position: relative;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  overflow: hidden;
+  height: 400px;
 }
 
 main .meal-section .meal-img img {
-  height: 400px;
+  height: 100%;
   object-fit: cover;
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
 }
 
 main .meal-section .meal-img .rate {
@@ -108,20 +113,23 @@ main .meal-section .meal-img .rate {
 
 main .meal-section .meal-img .rate i {
   color: #fac92a;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
+
 main .meal-section .meal-img .rate #rate {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   line-height: 20px;
   color: oklch(0.21 0.034 264.665);
 }
+
 main .meal-section .meal-img .rate #reviews {
-font-size: 12px;
-font-weight: 400;
-line-height: 16px;
-color: oklch(0.551 0.027 264.364);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 16px;
+  color: oklch(0.551 0.027 264.364);
 }
+
 main .meal-section .meal-img .times {
   position: absolute;
   background-color: #fbf4f2;
@@ -135,116 +143,191 @@ main .meal-section .meal-img .times {
 
 main .meal-section .meal-img .times i {
   color: var(--main-color);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 main .meal-section .meal-img .times .cat {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 16px;
   color: oklch(0.551 0.027 264.364);
 }
 
 main .meal-section .meal-img .times .time {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: 20px;
   color: oklch(0.21 0.034 264.665);
 }
 
-
-main .meal-section .info{
-    background-color: #fff;
-    height:100% ;
-
+main .meal-section .info {
+  background-color: #fff;
+  height: 100%;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
-main .meal-section .info .actions>div{
-    padding: 15px;
-    background-color: #ffe4dc;
-    color: #e74432;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 200ms;
+main .meal-section .info .actions > div {
+  padding: 15px;
+  background-color: #ffe4dc;
+  color: #e74432;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 200ms;
 }
 
-main .meal-section .info .actions>div:hover{
-    background-color: #FAD6A7;
+main .meal-section .info .actions > div:hover {
+  background-color: #fad6a7;
 }
 
-main .meal-section .info .level #level{
-font-size: 12px;
-font-weight: 600;
-line-height: 16px;
-color: oklch(0.527 0.154 150.069);
-background-color: #DBF9E7;
-padding: 5px 10px;
-border-radius: 12px;
-text-transform: capitalize; 
-}
-main .meal-section .info .level #countery{
-font-size: 12px;
-font-weight: 600;
-line-height: 16px;
-color: oklch(0.488 0.243 264.376);
-padding: 5px 10px;
-text-transform: capitalize;
-border-radius: 12px;
-background-color: #DBEAFE;
+main .meal-section .info .level #level {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 16px;
+  color: oklch(0.527 0.154 150.069);
+  background-color: #dbf9e7;
+  padding: 5px 10px;
+  border-radius: 12px;
+  text-transform: capitalize;
 }
 
-main .meal-section .info h2{
-font-size: 24px;
-font-weight: 700;
-line-height: 32px;
-color: oklch(0.21 0.034 264.665);
+main .meal-section .info .level #category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 16px;
+  color: oklch(0.488 0.243 264.376);
+  padding: 5px 10px;
+  text-transform: capitalize;
+  border-radius: 12px;
+  background-color: #dbeafe;
 }
 
-main .meal-section .info p{
-font-size: 14px;
-font-weight: 400;
-line-height: 20px;
-color: oklch(0.446 0.03 256.802);
+main .meal-section .info h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 32px;
+  color: oklch(0.21 0.034 264.665);
 }
 
-main .meal-section .info .nav-pills .nav-link{
-    color: #989DA6;
-    text-transform: capitalize;
-font-size: 12px;
-font-weight: 600;
-line-height: 16px;
-padding: 5px;
+main .meal-section .info p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: oklch(0.446 0.03 256.802);
 }
 
-main .meal-section .info .nav-pills .nav-link.active{
-    background-color: transparent;
-    color: var(--main-color);
-    border-bottom: 2px solid var(--main-color);
-    border-radius: 0px;
+main .meal-section .info .nav-pills .nav-link {
+  color: #989da6;
+  text-transform: capitalize;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 5px;
 }
 
-main .meal-section .info .tab-content #pills-ingredients{
-    background-color: #FFF9EB;
+main .meal-section .info .nav-pills .nav-link.active {
+  background-color: transparent;
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+  border-radius: 0px;
 }
+
+main .meal-section .info .tab-content #pills-ingredients {
+  background-color: #fff9eb;
+}
+
 main .meal-section .info .tab-content .tab-pane {
-    overflow-y: scroll;
-    max-height: 320px;
-    scrollbar-width: thin;
-    scrollbar-color: #fe886a4d;
-}
-main .meal-section .info .tab-content .step .num{
-    background-color:#EA6731;
-    padding: 3px 8px;
-    color: white;
-    border-radius: 50%;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
+  overflow-y: scroll;
+  max-height: 320px;
+  scrollbar-width: thin;
+  scrollbar-color: #fe886a4d transparent;
 }
 
-main .meal-section .info .tab-content .step p{
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-color: oklch(0.373 0.034 259.733);
+main .meal-section .info .tab-content .step .num {
+  background-color: #ea6731;
+  padding: 3px 8px;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+main .meal-section .info .tab-content .step p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: oklch(0.373 0.034 259.733);
+}
+
+main .meal-section .info .instructions span {
+  background-color: #ea6731;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+main .meal-section .info .instructions p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: oklch(0.373 0.034 259.733);
+}
+
+main .meal-section .info .calorie {
+  background-color: #f9fafb;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+main .meal-section .info .calorie .left .icon {
+  background-color: #fdedd4;
+  color: #ea6731;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+main .meal-section .info .calorie .left span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 16px;
+  color: oklch(0.373 0.034 259.733);
+}
+
+main .meal-section .info .calorie .right {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  color: oklch(0.21 0.034 264.665);
+}
+
+main .meal-section .info .tip {
+  background-color: #fffbea;
+  padding: 15px;
+  border-radius: 12px;
+  border-left: 4px solid var(--main-color);
+}
+
+main .meal-section .info .tip .done {
+  color: var(--main-color);
+}
+
+main .meal-section .info .tip p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: oklch(0.373 0.034 259.733);
+}
+
+.meal-section .info .try button {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 12px;
+  color: white;
+  background-image: linear-gradient(to right, #ff6900, #fb2c36);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 20px;
 }
