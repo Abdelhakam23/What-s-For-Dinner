@@ -1,3 +1,11 @@
+
+@media (min-width:768px) {
+    html{
+        font-size: 110%;
+    }
+    
+}
+
 @media (min-width: 992px) {
   .navbar .navbar-nav {
     border-top: none;
@@ -13,4 +21,14 @@
     border-bottom-left-radius: 0;
     border-top-right-radius: 12px;
   }
+  html{
+    font-size: 113%;
+  }
+}
+
+@media (min-width:1200px) {
+    html{
+        font-size: 115%;
+    }
+    
 }
