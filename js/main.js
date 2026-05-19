@@ -2,7 +2,8 @@ var meals = [
   {
     name: "Honey Garlic Salmon",
     description: "Pan-seared salmon with a sweet and savory glaze",
-    image: "../images/meal-1.jpg",
+    image:
+      "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=600&auto=format&fit=crop",
     prepTime: 10,
     cookTime: 15,
     servings: 2,
@@ -28,7 +29,7 @@ var meals = [
       "Garnish with sesame seeds and sliced green onions. Serve with steamed vegetables or rice.",
     ],
     nutrition: {
-      calories: 30,
+      calories: 340,
       carbohydrates: 28,
       fiber: 0,
       protein: 35,
@@ -39,14 +40,14 @@ var meals = [
       "Don't overcook salmon - it should be slightly pink in the center",
       "Use wild-caught salmon for best flavor and nutrition",
       "Let the sauce caramelize slightly for deeper flavor",
-      "Pair with steamed broccoli or asparagus for a complete meal",
     ],
   },
   {
     name: "Creamy Garlic Parmesan Chicken",
     description:
       "Tender chicken breasts smothered in a rich, creamy garlic and parmesan sauce.",
-    image: "../images/meal-2.jpg",
+    image:
+      "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=600&auto=format&fit=crop",
     prepTime: 15,
     cookTime: 20,
     servings: 4,
@@ -65,11 +66,11 @@ var meals = [
     ],
     instructions: [
       "Season chicken breasts with salt, pepper, and garlic powder on both sides.",
-      "Heat olive oil in a large skillet over medium-high heat and sear chicken for 5 minutes each side until golden and cooked through. Remove and set aside.",
+      "Heat olive oil in a large skillet over medium-high heat and sear chicken for 5 minutes each side. Remove and set aside.",
       "In the same skillet, reduce heat and pour in chicken broth and heavy cream. Bring to a simmer.",
       "Stir in the grated parmesan cheese until the sauce thickens slightly.",
       "Add the chopped spinach and let it wilt in the sauce for 2 minutes.",
-      "Return the chicken to the skillet, coat with the sauce, and serve hot over pasta or rice.",
+      "Return the chicken to the skillet, coat with the sauce, and serve hot.",
     ],
     nutrition: {
       calories: 450,
@@ -81,7 +82,6 @@ var meals = [
     },
     tips: [
       "Make sure the skillet is hot before adding the chicken to lock in the juices.",
-      "You can add sun-dried tomatoes for an extra burst of Italian flavor.",
       "If the sauce is too thick, splash in a little more chicken broth.",
     ],
   },
@@ -89,7 +89,8 @@ var meals = [
     name: "Classic Beef Stir-Fry",
     description:
       "Juicy strips of beef sizzled with fresh vegetables in a savory ginger-soy sauce.",
-    image: "../images/meal-3.jpg",
+    image:
+      "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=600&auto=format&fit=crop",
     prepTime: 20,
     cookTime: 10,
     servings: 3,
@@ -107,11 +108,11 @@ var meals = [
       "1 tablespoon cornstarch",
     ],
     instructions: [
-      "In a bowl, toss the sliced beef with cornstarch and one tablespoon of soy sauce. Let it marinate for 10 minutes.",
+      "In a bowl, toss the sliced beef with cornstarch and one tablespoon of soy sauce. Marinate for 10 minutes.",
       "Heat sesame oil in a large wok or skillet over high heat.",
       "Add the beef and stir-fry quickly for 2-3 minutes until browned. Remove from the pan.",
-      "Add garlic, broccoli, bell pepper, and carrots to the same pan. Stir-fry for 4 minutes until crisp-tender.",
-      "Return beef to the pan, pour in the remaining soy sauce, and toss everything together for 1 minute until glossy.",
+      "Add garlic, broccoli, bell pepper, and carrots to the same pan. Stir-fry for 4 minutes.",
+      "Return beef to the pan, pour in the remaining soy sauce, and toss everything together for 1 minute.",
     ],
     nutrition: {
       calories: 320,
@@ -124,14 +125,14 @@ var meals = [
     tips: [
       "Slice the beef against the grain so it stays incredibly tender.",
       "Keep the heat high; stir-fry is all about quick cooking at maximum temperature.",
-      "Serve immediately over steamed jasmine rice.",
     ],
   },
   {
     name: "Avocado Toast with Poached Eggs",
     description:
       "Crispy sourdough topped with creamy mashed avocado, perfectly poached eggs, and red pepper flakes.",
-    image: "../images/meal-4.jpg",
+    image:
+      "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=600&auto=format&fit=crop",
     prepTime: 5,
     cookTime: 5,
     servings: 1,
@@ -149,7 +150,7 @@ var meals = [
     instructions: [
       "Toast the sourdough slices until golden and crunchy.",
       "In a small bowl, mash the avocado with lemon juice, salt, and pepper.",
-      "Poach the eggs in simmering water with a drop of vinegar for 3 minutes until the whites are set but yolks are runny.",
+      "Poach the eggs in simmering water with a drop of vinegar for 3 minutes until the whites are set.",
       "Spread the mashed avocado evenly over the toasted bread.",
       "Top each slice with a poached egg, sprinkle with red pepper flakes, and serve immediately.",
     ],
@@ -163,15 +164,15 @@ var meals = [
     },
     tips: [
       "A drop of vinegar in the boiling water helps the egg whites hold their shape.",
-      "Use fully ripe avocados - they should feel slightly soft to a gentle squeeze.",
-      "Drizzle a little extra virgin olive oil on top for extra richness.",
+      "Use fully ripe avocados - they should feel slightly soft.",
     ],
   },
   {
     name: "Mediterranean Tuna Salad",
     description:
       "A fresh and zesty tuna salad packed with crisp cucumbers, tomatoes, olives, and a light lemon dressing.",
-    image: "../images/meal-5.jpg",
+    image:
+      "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=600&auto=format&fit=crop",
     prepTime: 10,
     cookTime: 0,
     servings: 2,
@@ -204,14 +205,14 @@ var meals = [
     tips: [
       "Let the salad sit in the fridge for 15 minutes before serving to let the flavors marry.",
       "Tuna packed in olive oil tastes much richer in salads than tuna in water.",
-      "You can crumble some feta cheese on top for a creamy, salty kick.",
     ],
   },
   {
     name: "Fudgy Chocolate Brownies",
     description:
       "Rich, dense, and super fudgy chocolate brownies with a crackly top.",
-    image: "../images/meal-6.jpg",
+    image:
+      "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=600&auto=format&fit=crop",
     prepTime: 15,
     cookTime: 22,
     servings: 9,
@@ -233,7 +234,7 @@ var meals = [
       "Add the eggs and vanilla extract; beat well until the mixture becomes slightly pale.",
       "Fold in the cocoa powder and flour gently until just combined (do not overmix).",
       "Stir in the chocolate chips and spread the batter smoothly into the prepared pan.",
-      "Bake for 20-22 minutes. The center should be set but still soft. Let cool completely before slicing.",
+      "Bake for 20-22 minutes. Let cool completely before slicing.",
     ],
     nutrition: {
       calories: 210,
@@ -245,8 +246,48 @@ var meals = [
     },
     tips: [
       "Do not overbake! A toothpick inserted in the center should come out with a few moist crumbs.",
-      "Using room temperature eggs helps them blend into the sugar-butter mixture better.",
       "For clean squares, wipe your knife with a warm, damp cloth between each cut.",
+    ],
+  },
+  {
+    name: "Classic Italian Margherita Pizza",
+    description:
+      "Simple yet perfect pizza with authentic tomato sauce, fresh mozzarella, and aromatic basil leaves.",
+    image:
+      "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?q=80&w=600&auto=format&fit=crop",
+    prepTime: 30,
+    cookTime: 10,
+    servings: 2,
+    rate: 4.9,
+    level: "medium",
+    category: "pizza",
+    ingredients: [
+      "1 pre-made pizza dough ball",
+      "1/2 cup crushed San Marzano tomatoes",
+      "1 cup fresh mozzarella cheese, torn",
+      "Fresh basil leaves",
+      "1 tablespoon extra virgin olive oil",
+      "A pinch of sea salt",
+    ],
+    instructions: [
+      "Preheat oven to its maximum temperature (around 450°F/230°C) with a pizza stone inside.",
+      "Stretch the pizza dough on parchment paper into a 12-inch circle.",
+      "Spread the crushed tomatoes evenly over the dough, leaving a small border.",
+      "Top with torn pieces of fresh mozzarella cheese.",
+      "Bake for 8-10 minutes until the crust is golden brown and cheese is bubbling.",
+      "Remove from oven, top immediately with fresh basil, drizzle with olive oil, and slice.",
+    ],
+    nutrition: {
+      calories: 290,
+      carbohydrates: 35,
+      fiber: 2,
+      protein: 12,
+      fat: 10,
+      sodium: 620,
+    },
+    tips: [
+      "Bake at the absolute highest temperature your oven can reach for a crispy crust.",
+      "Dry the fresh mozzarella with a paper towel before using so the pizza doesn't get soggy.",
     ],
   },
 ];
@@ -301,7 +342,6 @@ function displayMeal() {
                         <p class="m-0">${meals[idx].instructions[i]}</p>
                       </div>`;
   }
-  // 1. امسك الحاوية بتاعة الـ nutrition
   nutritionContainer.innerHTML = ``;
 
   var nutritionIcons = {
@@ -318,14 +358,16 @@ function displayMeal() {
     var iconClass = nutritionIcons[key] || "fa-chart-pie";
 
     nutritionContainer.innerHTML += `
-      <div class="calorie d-flex justify-content-between align-items-center mb-2">
-        <div class="left d-flex align-items-center gap-2">
-          <div class="icon d-flex align-items-center">
-            <i class="fa-solid ${iconClass}"></i>
+      <div class="col-12 col-md-6">
+        <div class="calorie d-flex justify-content-between align-items-center">
+          <div class="left d-flex align-items-center gap-2">
+            <div class="icon d-flex align-items-center">
+              <i class="fa-solid ${iconClass}"></i>
+            </div>
+            <span class="title text-capitalize">${key}</span>
           </div>
-          <span class="title text-capitalize">${key}</span>
+          <span class="right"> ${value} ${key === "calories" ? "kcal" : "g"} </span>
         </div>
-        <span class="right"> ${value} ${key === "calories" ? "kcal" : "g"} </span>
       </div>`;
   }
 
