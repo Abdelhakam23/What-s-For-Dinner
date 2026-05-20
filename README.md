@@ -12,7 +12,7 @@
 
 **Tonight's dinner — sorted in seconds. Discover, cook, and enjoy. 🔥**
 
-[🚀 Live Demo](#) • [📸 Preview](#-preview) • [✨ Features](#-features) • [🛠️ Tech Stack](#️-tech-stack)
+[🚀 Live Demo](https://what-for-dinner.netlify.app/) • [📸 Preview](#-preview) • [✨ Features](#-features) • [🛠️ Tech Stack](#️-tech-stack)
 
 </div>
 
