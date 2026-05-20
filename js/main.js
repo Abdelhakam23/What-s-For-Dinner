@@ -391,7 +391,7 @@ function changeIdx() {
   var newIdx;
   do {
     newIdx = Math.floor(Math.random() * meals.length);
-  } while (newIdx != idx);
+  } while (newIdx === idx);
   idx = newIdx;
   displayMeal();
 }
