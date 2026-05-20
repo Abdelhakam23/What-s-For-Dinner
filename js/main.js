@@ -387,7 +387,11 @@ var idx = Math.floor(Math.random() * meals.length);
 displayMeal();
 
 function changeIdx() {
-  idx = Math.floor(Math.random() * meals.length);
-  console.log(idx);
+
+  var newIdx;
+  do {
+    newIdx = Math.floor(Math.random() * meals.length);
+  } while (newIdx != idx);
+  idx = newIdx;
   displayMeal();
 }
